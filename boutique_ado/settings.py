@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-k0nph-=8*+ju3!l*u#k0kqfxbx@a97pt(d&4*9elugbg@4$g@1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-izzyleech-boutique-ado-nop79aqt7g.us2.codeanyapp.com','8010-izzyleech-boutique-ado-nop79aqt7g.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['8000-izzyleech-boutique-ado-nop79aqt7g.us2.codeanyapp.com']
 
 
 # Application definition
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     # other
     'crispy_forms',
 
-    ]
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
