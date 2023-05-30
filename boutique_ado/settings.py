@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-k0nph-=8*+ju3!l*u#k0kqfxbx@a97pt(d&4*9elugbg@4$g@1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-izzyleech-boutique-ado-nop79aqt7g.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['izzy-boutique-ado.herokuapp.com']
 
 
 # Application definition
@@ -127,13 +127,13 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-else:    
+else:
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
         }
-    }   
+    }
 
 
 # Password validation
