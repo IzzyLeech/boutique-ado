@@ -10,10 +10,14 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import os
 import dj_database_url
 
 from pathlib import Path
+import os
+
+if os.path.isfile("env.py"):
+    import env
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['izzy-boutique-ado.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['izzy-boutique-ado.herokuapp.com', '8000-izzyleech-boutique-ado-nop79aqt7g.us2.codeanyapp.com']
 
 
 # Application definition
@@ -107,7 +111,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 SITE_ID = 1
-
 
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
